@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">StudentTutotial</string>
+    <string name="parol_hint">Введите пароль</string>
+    <string name="login_hint">Введите логин</string>
+
+    <string name="text_for_nubmer">Введите номер</string>
+    <string name="text_for_">Введите номер</string>
+    <string name="text_for_comment">Введите комментарий</string>
+    <string name="button_for_search">button_for_search</string>
+</resources>

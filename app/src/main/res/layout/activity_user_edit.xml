@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/white_users">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="15dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_txt_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/bg_menu"
+            android:hint="Тип"
+            android:inputType="number"
+            android:textColor="@color/bg_menu"
+            android:textColorHighlight="@color/bg_menu"
+            android:textColorHint="@color/bg_menu"
+            android:textColorLink="@color/bg_menu"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edit_txt_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/bg_menu"
+            android:hint="Логин"
+            android:inputType="text"
+            android:textColor="@color/bg_menu"
+            android:textColorHint="@color/bg_menu"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edit_txt_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/bg_menu"
+            android:hint="Пароль"
+            android:inputType="text"
+            android:textColor="@color/bg_menu"
+            android:textColorHint="@color/bg_menu"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edit_txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/bg_menu"
+            android:hint="Имя"
+            android:inputType="text"
+            android:textColor="@color/bg_menu"
+            android:textColorHint="@color/bg_menu"
+            android:textSize="20sp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/proxima_regular"
+            android:padding="20dp"
+            android:paddingVertical="14dp"
+            android:text="Обновить"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            app:backgroundTint="@color/bg_menu"
+            app:cornerRadius="10dp"
+            app:rippleColor="@color/black" />
+    </LinearLayout>
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        app:indicatorColor="@color/bg_menu" />
+
+</RelativeLayout>

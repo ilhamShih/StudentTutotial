@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/bg_menu"
+    tools:context=".presentation.action.AutActivity">
+
+    <ImageView
+        android:id="@+id/img_account"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/relative_user_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/ic_base_user"
+        android:scaleType="fitCenter"
+        app:backgroundTint="@null"
+        app:backgroundTintMode="@null"
+        app:iconTint="@null"
+        app:rippleColor="@color/black" />
+
+    <RelativeLayout
+        android:id="@+id/relative_user_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/txt_user_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:fontFamily="@font/proxima_regular"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.3"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_user_type"
+            android:layout_marginHorizontal="15dp"
+            android:fontFamily="@font/proxima_regular"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.3"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_user_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/proxima_regular"
+            android:paddingVertical="14dp"
+            android:text="В таблицы"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            app:backgroundTint="@color/white"
+            app:cornerRadius="10dp"
+            app:rippleColor="@color/black" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_un_aut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_next"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/proxima_regular"
+            android:paddingVertical="14dp"
+            android:text="Выйти"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            app:backgroundTint="@color/white"
+            app:cornerRadius="10dp"
+            app:rippleColor="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_edit_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_user_txt"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:hint="@string/login_hint"
+            android:textColorHint="@color/status_bar"
+            android:fontFamily="@font/proxima_regular"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/parol_hint"
+            android:importantForAutofill="no"
+            android:textColorHint="@color/status_bar"
+            android:fontFamily="@font/proxima_regular"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="25dp"
+            android:importantForAutofill="no"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/proxima_regular"
+            android:paddingVertical="14dp"
+            android:text="Авторизоваться"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            app:backgroundTint="@color/white"
+            app:cornerRadius="10dp"
+            app:rippleColor="@color/black" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/img_account"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        app:indicatorColor="@color/white" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="bg_menu">#242a40</color>
+    <color name="bg_dialod">#FFA407</color>
+    <color name="status_bar">#2c4058</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_users">#D1CDCD</color>
+    <color name="bg_txt_color">#020202</color>
+</resources>

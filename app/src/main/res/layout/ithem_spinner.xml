@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/field_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+        android:paddingVertical="15dp"
+        android:layout_marginHorizontal="10dp"
+        android:paddingHorizontal="5dp"
+        android:text="AAAA.000000.000-00.00"
+        android:textSize="16sp" />
+
+</RelativeLayout>
